@@ -1,0 +1,9 @@
+{
+  "name": "zd-270979",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node fetcher.js"
+  }
+}
