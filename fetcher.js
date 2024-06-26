@@ -5,7 +5,9 @@ const obs = new PerformanceObserver((list) => {
     .getEntries()
     .filter((entry) => entry.initiatorType === 'fetch');
   if (fetches.length > 0) {
-    console.log(JSON.stringify(fetches));
+    const outJSON = JSON.stringify(fetches);
+    console.log('Fetches:\n\t', fetches);
+    console.log('json:\n\t', outJSON);
   }
 });
 
